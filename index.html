@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remove Nth Node From End</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<div class="slide active">
+  <h1>Remove Nth Node From End</h1>
+  <p>Understanding using real-life example and two pointers</p>
+  <button onclick="nextStatic()">Next ➡</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+  <h2>Real-Life Example (With Address)</h2>
+  <p>People standing in a line</p>
+
+  <div class="line">
+    <div class="node">
+      <div class="data">A</div>
+      <div class="addr">1000</div>
+    </div> →
+    <div class="node">
+      <div class="data">B</div>
+      <div class="addr">1004</div>
+    </div> →
+    <div class="node">
+      <div class="data">C</div>
+      <div class="addr">1008</div>
+    </div> →
+    <div class="node">
+      <div class="data">D</div>
+      <div class="addr">1012</div>
+    </div> →
+    <div class="node">
+      <div class="data">E</div>
+      <div class="addr">NULL</div>
+    </div>
+  </div>
+
+  <button onclick="nextStatic()">Next ➡</button>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <h2>Remove 2nd Node From End</h2>
+  <p>If n = 2, remove D</p>
+
+  <div class="line">
+    <div class="node">
+      <div class="data">A</div>
+      <div class="addr">1000</div>
+    </div> →
+    <div class="node">
+      <div class="data">B</div>
+      <div class="addr">1004</div>
+    </div> →
+    <div class="node">
+      <div class="data">C</div>
+      <div class="addr">1008</div>
+    </div> →
+    <div class="node remove">
+      <div class="data">D</div>
+      <div class="addr">1012</div>
+    </div> →
+    <div class="node">
+      <div class="data">E</div>
+      <div class="addr">NULL</div>
+    </div>
+  </div>
+
+  <p><b>Result:</b> A → B → C → E</p>
+  <button onclick="nextStatic()">Next ➡</button>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <h2>Enter Your Input</h2>
+  <p>Provide linked list and n value</p>
+
+  <input id="listInput" placeholder="Linked List (e.g. 1,2,3,4,5)">
+  <input id="nInput" placeholder="n (e.g. 2)">
+
+  <button onclick="start()">Start Explanation ➡</button>
+</div>
+
+<!-- DYNAMIC SLIDES -->
+<div id="dynamicSlides"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
